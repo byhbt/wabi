@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Upload CSV</h1>
+
+<%= form_for @product, url: products_path do |f| %>
+  <div class='form-group'>
+    <%= f.label :file, 'Upload file' %>
+    <%= f.file_field :file, class: 'form-control', required: true %>
+  </div>
+
+  <%= f.submit 'Upload CSV', class: 'btn btn-primary' %>
+<% end %>
+
+<br>
+
+<%= link_to 'Back to Product list', products_path %>

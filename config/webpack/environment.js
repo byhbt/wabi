@@ -5,6 +5,9 @@ const plugins = [
   new webpack.ProvidePlugin({
     // Translations
     I18n: 'i18n-js',
+    $: 'jquery',
+    jQuery: 'jquery',
+    Popper: ['popper.js', 'default']
   })
 ];
 

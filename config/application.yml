@@ -5,10 +5,11 @@ default: &default
   DB_USERNAME: "postgres"
   MAILER_DEFAULT_HOST: "localhost"
   MAILER_DEFAULT_PORT: "3000"
-  MAILER_SENDER: "Test <noreply@nimblehq.co>"
+  MAILER_SENDER: "Test <noreply@thanh.xyz>"
   AVAILABLE_LOCALES: "en"
   DEFAULT_LOCALE: "en"
   FALLBACK_LOCALES: "en"
+  STORAGE_DRIVER: "local"
 
 development:
   <<: *default
